@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 8, 20, 38;
+  --background-start-rgb: 8, 20, 38;
+  --background-end-rgb: 8, 20, 38;
+  --text-rgb-primary: 169, 162, 151;
+  --text-rgb-secondary: 96, 255, 217;
+  --shadow-primary: 0, 144, 118;
+  --border-primary: 0, 149, 113;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +18,12 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+.shadow {
+  outline: none;
+  box-shadow: 4px 4px 0 0 var(--shadow-primary);
+    transform: translate(-5px, -5px);
 }
 
 body {
