@@ -1,7 +1,13 @@
-import Image from "next/image";
+import Header from "../components/Header/header";
+import Navbar from "@/components/Header/Navbar/navbar";
+
 
 export default function Home() {
   return (
-    <div></div>
+    <div className="m-4">
+      <Navbar/>
+      <Header/>
+
+    </div>
   );
 }
