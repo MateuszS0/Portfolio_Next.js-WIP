@@ -33,3 +33,6 @@ body {
   box-shadow: 4px 4px 0 0 var(--shadow-primary);
     transform: translate(-5px, -5px);
 }
+.text-decoration-primary {
+  color: #32a16d;
+}
