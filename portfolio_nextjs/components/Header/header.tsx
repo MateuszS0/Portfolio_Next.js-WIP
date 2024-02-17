@@ -1,4 +1,4 @@
-
+import Animation from "../Animation/animation";
 
 const Header = () => {
     return(
