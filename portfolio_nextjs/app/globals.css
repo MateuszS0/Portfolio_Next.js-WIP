@@ -6,8 +6,8 @@
   --background-rgb: 8, 20, 38;
   --text-rgb-primary: 169, 162, 151;
   --text-rgb-secondary: 96, 255, 217;
-  --shadow-primary: 0, 144, 118;
-  --border-primary: 0, 149, 113;
+  --shadow-primary: #009076;
+  --border-primary: #009571;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,4 +35,18 @@ body {
 }
 .text-decoration-primary {
   color: #32a16d;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border-primary);
+  box-shadow: 3px 3px 3px var(--shadow-primary);
+  @apply transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-150
+}
+.button:hover {
+  background-color: rgb(71, 185, 122);
+  color: #148bdb;
 }
