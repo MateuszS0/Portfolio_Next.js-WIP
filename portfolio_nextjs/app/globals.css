@@ -47,6 +47,6 @@ body {
   @apply transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-150
 }
 .button:hover {
-  background-color: rgb(71, 185, 122);
-  color: #148bdb;
+  background: radial-gradient( rgb(75, 50, 116), rgb(61, 180, 115));
+  color: #2ea02b;
 }
