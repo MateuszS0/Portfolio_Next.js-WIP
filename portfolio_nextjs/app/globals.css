@@ -41,7 +41,7 @@ body {
   cursor: pointer;
   font-size: 1.1rem;
   padding: 0.6rem 0.75rem;
-  border-radius: 2rem;
+  border-radius: 2rem;    /* Could make them more blocky */
   border: 1px solid var(--border-primary);
   box-shadow: 3px 3px 3px var(--shadow-primary);
   @apply transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-150
