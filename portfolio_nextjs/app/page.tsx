@@ -4,7 +4,7 @@ import Skills from "@/components/Skills/skills";
 import Projects from "@/components/Projects/projects";
 export default function Home() {
   return (
-    <div className="main-wrapper m-4">
+    <div className="main-wrapper">
       <Navbar/>
       <Header/>
       <Skills/>

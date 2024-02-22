@@ -1,3 +1,7 @@
-.button {
-    cursor: pointer;
+* {
+    padding: 0;
+    margin: 0;
+}
+.navbar-wrapper {
+    background: linear-gradient(to right, rgb(8, 20, 38) 20%, rgb(12, 26, 58) 50%, rgb(8, 20, 38) 80%);
 }

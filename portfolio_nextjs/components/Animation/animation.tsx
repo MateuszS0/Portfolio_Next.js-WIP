@@ -11,7 +11,8 @@ const Animation  = () => {
         alt="GIF"
         loading="lazy"
         />
-        </div>
+        </div> <small className="flex justify-center">Made in p5.js</small>
+        {/* maybe make it a hover over text ? */}
     </div>
   );
 };
