@@ -1,16 +1,36 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./skills.css";
 
 const Skills = () => {
   const [showButtonWrapper, setShowButtonWrapper] = useState(true);
   const [selectedButton, setSelectedButton] = useState(null);
+  // const [showContent, setShowContent] = useState(false);
 
   const handleButtonClick = (buttonName: any) => {
     setShowButtonWrapper(false);
     setSelectedButton(buttonName);
     // console.log(buttonName);
+    transition();
   };
+  //hides buttons after 1seconds and shows other elements
+  function transition() {
+    setTimeout(() => {
+      const button = document.querySelector(`.button-wrapper`);
+      const details = document.querySelector(`.skills-details`)
+      if (button) {
+        button.classList.add('none');
+        // setShowContent(prevShowContent => !prevShowContent);
+        details?.classList.remove('none')
+        // console.log(showContent);
+      }
+    }, 1000);
+  }
+  // useEffect(() => {
+  //   setShowContent(false);
+  //   console.log(showContent);
+  // }, [selectedButton]); //reset showContent on button change
+  
 
   return (
     <div className="skills-wrapper">
@@ -44,12 +64,12 @@ const Skills = () => {
         <div className={`fade-container ${showButtonWrapper ? 'hide' : 'show'}`}>
           {selectedButton === "Web Development" && (
             <div>
-              <div>Clicked Web Development</div>
+              <div className="none flex justify-center skills-details">Clicked Web Development</div>
             </div>
           )}
           {selectedButton === "Other" && (
             <div>
-              <div>Clicked Other</div>
+              <div className="none flex justify-center skills-details">Clicked Other</div>
             </div>
           )}
         </div>
