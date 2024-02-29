@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* animations for buttons */
 .button-wrapper {
     opacity: 1;
     transition: opacity 1s ease-in-out;
@@ -36,4 +37,20 @@
         opacity: 1;
     }
 }
-
+/* skills */
+.skills-details {
+    width: auto;
+    font-size: 1.1rem;
+    padding: 0.6rem 0.75rem;
+}
+.details-wrapper {
+    border: 1px solid var(--border-primary);
+    border-radius: 2rem;
+}
+.skill {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

@@ -64,12 +64,32 @@ const Skills = () => {
         <div className={`fade-container ${showButtonWrapper ? 'hide' : 'show'}`}>
           {selectedButton === "Web Development" && (
             <div>
-              <div className="none flex justify-center skills-details">Clicked Web Development</div>
+              <div className="none flex justify-center items-center flex-col skills-details">
+              <h1>Web Development</h1>
+                <div className="details-wrapper grid grid-cols-3 gap-4">
+                  <div className="skill">
+                    <div className="together flex col-span-2">
+                      <img src="skills/JavaScript_logo.png" alt="JavaScript" width={150}/>
+                      <img src="skills/TypeScript_logo.jpg" alt="TypeScript" width={150}/>
+                    </div>
+                  </div>
+                  {/* placeholders */}
+                  <div className="skill col-span-1"> 
+                    <img src="skills/JavaScript_logo.png" alt="" width={150}/>
+                  </div>
+                  <div className="skill col-span-1">
+                    <img src="skills/JavaScript_logo.png" alt="" width={150}/>
+                  </div>
+                  <div className="skill col-span-1">
+                    <img src="skills/JavaScript_logo.png" alt="" width={150}/>
+                  </div>
+                </div>
+              </div>
             </div>
           )}
           {selectedButton === "Other" && (
             <div>
-              <div className="none flex justify-center skills-details">Clicked Other</div>
+              <div className="none flex justify-center skills-details">Other</div>
             </div>
           )}
         </div>

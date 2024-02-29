@@ -15,6 +15,7 @@ body {
     transition: transform 0.2s ease;
     position: fixed;
 }
+/* maybe add opacity ? */
 
 .navbar-wrapper.hide {
     transform: translateY(calc(-1*var(--nav-height)));
