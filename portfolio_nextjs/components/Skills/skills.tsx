@@ -73,15 +73,24 @@ const Skills = () => {
                       <img src="skills/TypeScript_logo.jpg" alt="TypeScript" width={150}/>
                     </div>
                   </div>
-                  {/* placeholders */}
+                  {/* add hovers/focus on them */}
                   <div className="skill col-span-1"> 
-                    <img src="skills/JavaScript_logo.png" alt="" width={150}/>
+                    <img src="skills/react.png" alt="React" width={150}/>
                   </div>
                   <div className="skill col-span-1">
-                    <img src="skills/JavaScript_logo.png" alt="" width={150}/>
+                    <img src="skills/tailwind.png" alt="Tailwind" width={200} className="border-2 border-green-500/50 rounded-lg p-6"/>
                   </div>
                   <div className="skill col-span-1">
-                    <img src="skills/JavaScript_logo.png" alt="" width={150}/>
+                    <img src="skills/next.png" alt="Next.js" width={150}/>
+                  </div>
+                  <div className="skill col-span-1">
+                    <img src="skills/node.png" alt="Nodejs" width={150}/>
+                  </div>
+                  <div className="skill col-span-1">
+                    <img src="skills/java.png" alt="Java" width={150}/>
+                  </div>
+                  <div className="skill col-span-1">
+                    <img src="skills/git.webp" alt="Git" width={150}/>
                   </div>
                 </div>
               </div>
