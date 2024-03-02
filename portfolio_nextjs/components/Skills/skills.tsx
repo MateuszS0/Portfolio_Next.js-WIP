@@ -5,33 +5,40 @@ import "./skills.css";
 const Skills = () => {
   const [showButtonWrapper, setShowButtonWrapper] = useState(true);
   const [selectedButton, setSelectedButton] = useState(null);
-  // const [showContent, setShowContent] = useState(false);
+  const [showDetails, setShowDetails] = useState(false);
 
+//makes sure the correct elements are shown after button is clicked
+//also works with animation in css file
   const handleButtonClick = (buttonName: any) => {
     setShowButtonWrapper(false);
     setSelectedButton(buttonName);
-    // console.log(buttonName);
     transition();
   };
-  //hides buttons after 1seconds and shows other elements
+  //hides buttons after X seconds and shows other elements
   function transition() {
     setTimeout(() => {
       const button = document.querySelector(`.button-wrapper`);
       const details = document.querySelector(`.skills-details`)
       if (button) {
         button.classList.add('none');
-        // setShowContent(prevShowContent => !prevShowContent);
         details?.classList.remove('none')
-        // console.log(showContent);
       }
     }, 750);
   }
-  // useEffect(() => {
-  //   setShowContent(false);
-  //   console.log(showContent);
-  // }, [selectedButton]); //reset showContent on button change
+// Hides the Skill-details and shows the button wrapper.
+  const handleBackButton = () => {
+    setShowDetails(false);
+    setShowButtonWrapper(true);
+  }
+  useEffect(() => {
+    if (showDetails) {
+      const button = document.querySelector(`.button-wrapper`);
+      if (button) {
+        button.classList.add('none');
+      }
+    }
+  }, [showDetails]);
   
-
   return (
     <div className="skills-wrapper">
       <h2 className="flex justify-center text-4xl">Skills</h2>
@@ -68,7 +75,11 @@ const Skills = () => {
               <h1>Web Development</h1>
                 <div className="details-wrapper grid grid-cols-3 gap-4">
                   <div className="col-span-3 justify-self-start">
-                    <img src="back-button.png" alt="" width={100} className="pt-5 pl-5"/>
+                    <img src="back-button.png" 
+                    alt="BackButton" 
+                    width={100} 
+                    className="pt-5 pl-5"
+                    onClick={handleBackButton}/>
                   </div>
                   <div className="skill">
                     <div className="together flex col-span-2">
