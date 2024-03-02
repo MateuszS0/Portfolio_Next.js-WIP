@@ -24,7 +24,7 @@ const Skills = () => {
         details?.classList.remove('none')
         // console.log(showContent);
       }
-    }, 1000);
+    }, 750);
   }
   // useEffect(() => {
   //   setShowContent(false);
@@ -67,6 +67,9 @@ const Skills = () => {
               <div className="none flex justify-center items-center flex-col skills-details">
               <h1>Web Development</h1>
                 <div className="details-wrapper grid grid-cols-3 gap-4">
+                  <div className="col-span-3 justify-self-start">
+                    <img src="back-button.png" alt="" width={100} className="pt-5 pl-5"/>
+                  </div>
                   <div className="skill">
                     <div className="together flex col-span-2">
                       <img src="skills/JavaScript_logo.png" alt="JavaScript" width={150}/>
