@@ -27,18 +27,17 @@ const Skills = () => {
   }
 // Hides the Skill-details and shows the button wrapper.
   const handleBackButton = () => {
-    setShowDetails(false);
+    setShowDetails(!showDetails);
     setShowButtonWrapper(true);
   }
+  // hides the details-wrapper and shows buttons again
   useEffect(() => {
-    if (showDetails) {
-      const button = document.querySelector(`.button-wrapper`);
-      if (button) {
-        button.classList.add('none');
-      }
+    const detailsWrapper = document.querySelector('.skills-details');
+    if (detailsWrapper) {
+      detailsWrapper.classList.add('none');
     }
   }, [showDetails]);
-  
+ 
   return (
     <div className="skills-wrapper">
       <h2 className="flex justify-center text-4xl">Skills</h2>
