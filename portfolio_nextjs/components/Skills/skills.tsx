@@ -25,12 +25,11 @@ const Skills = () => {
       }
     }, 750);
   }
-// Hides the Skill-details and shows the button wrapper.
+// Hides the skills-details and shows the button-wrapper.
   const handleBackButton = () => {
     setShowDetails(!showDetails);
     setShowButtonWrapper(true);
   }
-  // hides the details-wrapper and shows buttons again
   useEffect(() => {
     const detailsWrapper = document.querySelector('.skills-details');
     if (detailsWrapper) {
@@ -68,10 +67,11 @@ const Skills = () => {
       </div>
       {selectedButton && (
         <div className={`fade-container ${showButtonWrapper ? 'hide' : 'show'}`}>
+          {/* Show Skills For Web Development button */}
           {selectedButton === "Web Development" && (
             <div>
               <div className="none flex justify-center items-center flex-col skills-details">
-              <h1>Web Development</h1>
+              <h1>Web Development </h1>
                 <div className="details-wrapper grid grid-cols-3 gap-4">
                   <div className="col-span-3 justify-self-start">
                     <img src="back-button.png" 
@@ -109,6 +109,7 @@ const Skills = () => {
               </div>
             </div>
           )}
+          {/* Show Skills For Other button */}
           {selectedButton === "Other" && (
             <div>
               <div className="none flex justify-center skills-details">Other</div>
