@@ -7,18 +7,18 @@ const Projects = () => {
         <div className="projects-wrapper flex justify-center">
             <div className="project">
                 <a href="https://github.com/MateuszS0/PriceAlert">
-                <img src="otherSkills.jpg"
-                alt="PriceAlert" 
-                />
-                <h2 className="project-title">PriceAlert: placeholder</h2>
+                    <img src="otherSkills.jpg"
+                    alt="PriceAlert" 
+                    />
+                    <h2 className="project-title">PriceAlert: placeholder</h2>
                 </a>
             </div>
             <div className="project">
                 <a href="https://github.com/MateuszS0/Map">
-                <img src="otherSkills.jpg" 
-                alt="Map" 
-                />
-                <h2 className="project-title">Map: placeholder</h2>
+                    <img src="otherSkills.jpg" 
+                    alt="Map" 
+                    />
+                    <h2 className="project-title">Map: placeholder</h2>
                 </a>
             </div>
             <div className="project">
@@ -45,7 +45,6 @@ const Projects = () => {
                     <h2 className="project-title">Portfolio V1: placeholder</h2>
                 </a>
             </div>
-
         </div>
         </>
     )
