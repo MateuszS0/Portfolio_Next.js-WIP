@@ -44,7 +44,6 @@ const Skills = () => {
       <div className={`button-wrapper ${showButtonWrapper ? 'show' : 'hide'} flex justify-center`}>
         <div className="w-1/4 flex justify-center p-6">
           <div className="text-2xl text-center">
-            Web Development
             <img
               className="button my-6"
               src="/web-dev-photo.jpg"
@@ -56,10 +55,9 @@ const Skills = () => {
         </div>
         <div className="w-1/4 flex justify-center p-6">
           <div className="text-2xl text-center">
-            Other
             <img
               className="button my-6"
-              src="/web-dev-photo.jpg"
+              src="/otherSkills.jpg"
               alt="Other"
               onClick={() => handleButtonClick("Other")}
             />
