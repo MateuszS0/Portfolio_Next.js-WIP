@@ -148,13 +148,13 @@ const Skills = () => {
                 {/* add hovers/focus on them */}
                 <div className="skill col-span-1"> 
                 <div className="hiddenDiv">
-                      <span className="hiddenText">Designing</span>
+                      <span className="hiddenText">Figma: Designing</span>
                   <img src="skills/figma.png" alt="Figma" width={150}/>
                   </div>
                 </div>
                 <div className="skill col-span-1">
                 <div className="hiddenDiv">
-                      <span className="hiddenText">Planning</span>
+                      <span className="hiddenText">Scrum: Planning</span>
                   <img src="skills/scrum.png" alt="Scrum" width={150}/>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ const Skills = () => {
                 </div>
                 <div className="skill col-span-1">
                 <div className="hiddenDiv">
-                      <span className="hiddenText">Everyone gets containers</span>
+                      <span className="hiddenText">Docker: Everyone gets containers</span>
                   <img src="skills/docker.png" alt="Docker" width={150}/>
                   </div>
                 </div>
