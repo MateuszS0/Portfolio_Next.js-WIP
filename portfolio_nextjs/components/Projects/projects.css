@@ -10,6 +10,7 @@
     @apply 
     w-1/3
     mx-8 my-6
+    p-2
     max-w-sm
     flex
     flex-col
@@ -18,4 +19,16 @@
 .project-title {
     display: flex;
     justify-content: center;
+}
+.project-image {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border-primary);
+    border-radius: 2rem;
+    @apply transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-150
+}
+
+.project-image:hover {
+    background: radial-gradient( rgb(52, 25, 173), rgb(61, 180, 115));
+    color: #2ea02b;
 }
